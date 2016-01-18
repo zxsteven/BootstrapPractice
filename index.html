@@ -32,31 +32,25 @@
   </div>
     <div class="container">
     <h1>Home Page</h1>
-
-    <span class="glyphicon glyphicon-star"></span>
-      <div class="input-group">
-        <span class="input-group-addon"></span>
-        <input class="form-control" />
+      
+    <button class="btn btn-success" data-toggle='modal' data-target='#modal'>Launch Modal</button>
+    <div class="modal" id="modal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss='modal'>X</button>
+            <h4 class="modal-title">Modal Title</h4>
+          </div>
+          <div class="modal-body">
+            Nice na machine
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal">Close</button>
+            <button class="btn btn-success">Save Changes</button>
+          </div>
+        </div>
       </div>
-
-      <button class="btn btn-success">
-        <span class="glyphicon glyphicon-star"></span>
-        Star
-      </button>
-
-      <div class="alert alert-success">
-        <button type='button' class="close" data-dismiss='alert'>X</button>
-        Stuff
-      </div>
-
-      <ul class="list-group">
-        <li class="list-group-item">Inbox<span class='badge'>5,000,000</span></li>
-        <li class="list-group-item">Sent<span class='badge'>2</span></li>
-        <li class="list-group-item">Draft<span class='badge'>-50</span></li>
-        <li class="list-group-item">Trash<span class='badge'>?</span></li>
-      </ul>
     </div>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
