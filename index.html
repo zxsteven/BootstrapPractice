@@ -9,8 +9,8 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
-  <body>
-  <div class="navbar navbar-inverse">
+  <body data-spy='scroll' data-target='.navbar-collapse'>
+  <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <a href="" class="navbar-brand">My Website</a>
@@ -23,33 +23,21 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="">Page 1</a></li>
-          <li><a href="">Page 2</a></li>
-          <li><a href="">Page 3</a></li>
+          <li><a href="#div1">Page 1</a></li>
+          <li><a href="#div2">Page 2</a></li>
+          <li><a href="#div3">Page 3</a></li>
         </ul>
       </div>
     </div>
   </div>
     <div class="container">
     <h1>Home Page</h1>
+
+    <div class='content' id="div1">Content</div>
+    <div class='content' id="div2">Content</div>
+    <div class='content' id="div3">Content</div>
       
-    <button class="btn btn-success" data-toggle='modal' data-target='#modal'>Launch Modal</button>
-    <div class="modal" id="modal">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" data-dismiss='modal'>X</button>
-            <h4 class="modal-title">Modal Title</h4>
-          </div>
-          <div class="modal-body">
-            Nice na machine
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-default" data-dismiss="modal">Close</button>
-            <button class="btn btn-success">Save Changes</button>
-          </div>
-        </div>
-      </div>
+    
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
